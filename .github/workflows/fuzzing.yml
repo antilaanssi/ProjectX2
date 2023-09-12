@@ -12,15 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - name: Run build
         run: |
                 chmod +x ${GITHUB_WORKSPACE}/build.sh
                 ${GITHUB_WORKSPACE}/build.sh
         shell: bash
-
-
-        - name: Run Docker container
+      - name: Run Docker container
           run: |
                 chmod +x ${GITHUB_WORKSPACE}/run.sh
                 ${GITHUB_WORKSPACE}/run.sh
