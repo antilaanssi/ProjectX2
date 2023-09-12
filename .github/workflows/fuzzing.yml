@@ -1,4 +1,4 @@
-iname: fuzzer workflow 
+name: fuzzer workflow 
 
 on:
   push:
