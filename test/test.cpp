@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "src/calculator.h"
+#include "../src/calculator.h"
 #include <cifuzz/cifuzz.h>
 #include <fuzzer/FuzzedDataProvider.h>
 FUZZ_TEST_SETUP() {
