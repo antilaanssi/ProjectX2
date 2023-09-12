@@ -18,6 +18,6 @@ jobs:
                 ${GITHUB_WORKSPACE}/build.sh
         shell: bash
       - name: Run Docker container
-          run: |
+        run: |
                 chmod +x ${GITHUB_WORKSPACE}/run.sh
                 ${GITHUB_WORKSPACE}/run.sh
