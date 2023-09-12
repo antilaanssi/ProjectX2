@@ -7,12 +7,20 @@ on:
     branches: [ "main" ]
 
 jobs:
-
-  build:
-
+  runscript:
+    name: Build and run docker container
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: ./build.sh && ./run.sh 
+      - uses actions/checkout@v2
+
+      - name: Run build
+        run: |
+          chmod +x ${GITHUB_WORKSPACE}/build.sh
+          ${GITHUB_WORKSPACE}/build.sh
+        shell: bash
+
+
+        - name: Run Docker container
+          run: |
+            chmod +x ${GITHUB_WORKSPACE}/run.sh
+            ${GITHUB_WORKSPACE}/run.sh
