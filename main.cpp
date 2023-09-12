@@ -1,6 +1,5 @@
 #include "src/calculator.h"
 
-
 int main() {
         float n1 = 1.1;
         float n2 = 2.1;
