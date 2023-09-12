@@ -1,5 +1,0 @@
-jobs:
-  fuzz-job:
-    steps:
-      - name: run container
-        run: ./run.sh
