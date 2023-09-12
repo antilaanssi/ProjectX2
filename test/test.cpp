@@ -2,6 +2,9 @@
 #include "../src/calculator.h"
 #include <cifuzz/cifuzz.h>
 #include <fuzzer/FuzzedDataProvider.h>
+#include <cstdint>
+#include <cstddef>
+#include <string>
 FUZZ_TEST_SETUP() {
   // Perform any one-time setup required by the FUZZ_TEST function.
 }
